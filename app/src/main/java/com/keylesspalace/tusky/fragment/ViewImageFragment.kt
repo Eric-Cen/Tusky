@@ -203,6 +203,7 @@ class ViewImageFragment : ViewMediaFragment() {
                                 .load(previewUrl)
                                 .dontAnimate()
                                 .onlyRetrieveFromCache(true)
+                                .centerInside()
                                 .addListener(ImageRequestListener(true, isThumnailRequest = true)))
                     else it
                 }
